@@ -6,18 +6,32 @@
 @import "compass/reset";
 @import "fonts";
 
+$fontColor:#ecebe3;
+$sectionPadding: 2em;
+
+%sectionValues {
+  color: $fontColor;
+  padding: $sectionPadding;
+}
 body{
   font-size: 16px;
   font-family: Verdana, san-serif;
+  background: #acc2be;
+  padding: 2em;
 }
-
+section.about {background:#5c5a57;@extend %sectionValues;}
+section  h2 {font-size: 2.5em; padding:0.5em 0;}
+section.organisers {background:#648494; @extend %sectionValues;}
+header {background:#3d454b;  font-size:1.2em; @extend %sectionValues;}
 h1{
   font-family: 'Nova Square', Arial, sans-serif;
   font-size: 5em;
 }
 
+a:link,
+a:visited {color:#b6c9c6;}
 p{
   line-height: 1.5em;
   margin: 0.75em 0;
 }
-
+strong {font-weight: 600;color:#d7a75b;}
